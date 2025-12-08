@@ -1,0 +1,4 @@
+!gaf-version: 2.1
+!
+UniProtKB	prot1	symbol1	INDIRECT	GO:0005515	PMID:12345	TAS	C	protein names	gene_product	protein	taxon:9606	20210101	UniProt
+UniProtKB	prot2	symbol2	INDIRECT	GO:0005515	PMID:12345	TAS	C	protein names	gene_product	protein	taxon:9606	20210101	UniProt

@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version5" level="2" version="5">
+  <model id="tangle_ppi_network">
+    <listOfCompartments>
+      <compartment id="default" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="FGF1" name="FGF1" compartment="default" initialAmount="1"/>
+      <species id="FGF4" name="FGF4" compartment="default" initialAmount="1"/>
+      <species id="FGF6" name="FGF6" compartment="default" initialAmount="1"/>
+      <species id="KLB" name="KLB" compartment="default" initialAmount="1"/>
+      <species id="FGF2" name="FGF2" compartment="default" initialAmount="1"/>
+      <species id="FGF18" name="FGF18" compartment="default" initialAmount="1"/>
+      <species id="FGFR4" name="FGFR4" compartment="default" initialAmount="1"/>
+      <species id="FGF19" name="FGF19" compartment="default" initialAmount="1"/>
+      <species id="FGF5" name="FGF5" compartment="default" initialAmount="1"/>
+      <species id="FGF8" name="FGF8" compartment="default" initialAmount="1"/>
+      <species id="FGF9" name="FGF9" compartment="default" initialAmount="1"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r0" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r1" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r2" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r3" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r4" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r5" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r6" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r7" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r8" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r9" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF1"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r10" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r11" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r12" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r13" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r14" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r15" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r16" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r17" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r18" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r19" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF18"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r20" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r21" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r22" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r23" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r24" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r25" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r26" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r27" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r28" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r29" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF19"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r30" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r31" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r32" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r33" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r34" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r35" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r36" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r37" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r38" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r39" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF2"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r40" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r41" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r42" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r43" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r44" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r45" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r46" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r47" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r48" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r49" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF4"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r50" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r51" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r52" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r53" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r54" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r55" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r56" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r57" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r58" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r59" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF5"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r60" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r61" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r62" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r63" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r64" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r65" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r66" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r67" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r68" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r69" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF6"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r70" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r71" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r72" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r73" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r74" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r75" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r76" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r77" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r78" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r79" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF8"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r80" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r81" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r82" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r83" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r84" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r85" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r86" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r87" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r88" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r89" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGF9"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r90" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r91" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r92" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="KLB"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r93" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r94" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r95" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r96" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r97" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r98" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r99" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FGFR4"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r100" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r101" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF6"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r102" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF2"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r103" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF1"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r104" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF5"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r105" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF8"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r106" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF9"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r107" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF18"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r108" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGFR4"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+      <reaction id="r109" reversible="false">
+        <listOfReactants>
+          <speciesReference species="KLB"/>
+          <speciesReference species="FGF19"/>
+        </listOfReactants>
+        <listOfProducts/>
+        <kineticLaw/>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
