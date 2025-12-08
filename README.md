@@ -101,4 +101,7 @@ make
 ## Citation
 MD. Arshad, Department of Computer Science, Jamia Millia Islamia.
 
+## Blog
+Link : https://subconc.hashnode.dev/tangle
+
 
