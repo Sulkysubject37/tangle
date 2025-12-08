@@ -1,0 +1,12 @@
+# Build System
+cmake >= 3.15
+make  # or other build generator (Ninja, etc.)
+
+# Compiler
+C++17 compatible compiler (g++, clang++, or msvc)
+
+# External Dependencies (Automatically fetched by CMake)
+FTXUI (v6.1.9)
+
+# Optional
+nlohmann/json (included in include/nlohmann/json.hpp)
