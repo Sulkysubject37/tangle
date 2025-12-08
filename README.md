@@ -99,5 +99,6 @@ make
 ```
 
 ## Citation
-MD. Arshad, 2025, All Rights Reserved, Department of Computer Science, Jamia Millia Islamia.
+MD. Arshad, Department of Computer Science, Jamia Millia Islamia.
+
 
