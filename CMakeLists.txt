@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
-project(tangle LANGUAGES CXX)
+project(tangle VERSION 0.1.0 LANGUAGES CXX)
 
 include(FetchContent)
+include(GNUInstallDirs)
 FetchContent_Declare(
   ftxui
   GIT_REPOSITORY https://github.com/ArthurSonzogni/FTXUI.git
@@ -15,6 +16,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Options
 option(TANGLE_WITH_JSON "Enable JSON support" OFF)
+option(BUILD_TANGLE_CLI "Build tangle CLI" ON)
+option(BUILD_TANGLE_TUI "Build tangle TUI" ON)
 
 # ----------------------------------------------------------------------------
 # Library: tangle
@@ -47,8 +50,10 @@ target_sources(tangle_lib
 # Executable: tangle (CLI)
 # ----------------------------------------------------------------------------
 
-add_executable(tangle src/main.cpp)
-target_link_libraries(tangle PRIVATE tangle_lib)
+if(BUILD_TANGLE_CLI)
+  add_executable(tangle src/main.cpp)
+  target_link_libraries(tangle PRIVATE tangle_lib)
+endif()
 
 # ----------------------------------------------------------------------------
 # JSON support
@@ -62,8 +67,32 @@ endif()
 # ----------------------------------------------------------------------------
 # Executable: tangle-tui
 # ----------------------------------------------------------------------------
-add_executable(tangle-tui src/tui.cpp)
-target_link_libraries(tangle-tui PRIVATE tangle_lib ftxui::component)
+if(BUILD_TANGLE_TUI)
+  add_executable(tangle-tui src/tui.cpp)
+  target_link_libraries(tangle-tui PRIVATE tangle_lib ftxui::component)
+endif()
+
+# ----------------------------------------------------------------------------
+# Installation
+# ----------------------------------------------------------------------------
+install(TARGETS tangle_lib
+        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+        INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+
+if(BUILD_TANGLE_CLI)
+  install(TARGETS tangle
+          RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+endif()
+
+if(BUILD_TANGLE_TUI)
+  install(TARGETS tangle-tui
+          RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+endif()
 
 # ----------------------------------------------------------------------------
 # Tests
