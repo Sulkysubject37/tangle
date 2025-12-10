@@ -11,6 +11,27 @@
 
 `tangle` is a high-performance C++ library for **static protein–protein interaction (PPI) network analysis**, designed to support drug discovery and systems biology. It offers a clean C++ API, a powerful CLI, and an interactive TUI.
 
+## Installation
+
+### macOS (Homebrew)
+
+```bash
+brew tap sulkysubject37/tangle
+brew install sulkysubject37/tangle/tangle
+```
+
+This installs the `tangle` CLI, the `tangle-tui` TUI, and the C++ library/headers into your Homebrew prefix.
+
+### From source (Linux & macOS)
+
+```bash
+mkdir build && cd build
+cmake ..
+make
+```
+
+You can then run the binaries from the build directory (`./tangle`, `./tangle-tui`) or install system-wide via `cmake --install .` / `sudo make install`.
+
 ## 1. Core Library
 Built for speed and memory efficiency, the `tangle` library provides:
 - **Graph Engine**: Optimized adjacency lists for large scale networks (STRING, BioGRID).
@@ -72,7 +93,7 @@ Identify functional modules (communities) using the Louvain algorithm.
 ```
 
 ### 3. Functional Enrichment
- Annotate the discovered communities using Gene Ontology (GO) terms.
+Annotate the discovered communities using Gene Ontology (GO) terms.
 ```bash
 # Using the provided dummy GAF for testing (or provide your own GAF file)
 ./tangle annotate --in-comm=communities.tsv --in-gaf=tests/dummy_goa.gaf --out=enrichment_results.tsv
@@ -86,7 +107,8 @@ Export the network structure to SBML for use in other systems biology tools.
 
 ## Getting Started
 
-### Build
+### Build from source
+If you did not install via Homebrew, you can build from source as follows:
 ```bash
 mkdir build && cd build
 cmake ..
@@ -94,8 +116,14 @@ make
 ```
 
 ### Run
+From a source build, run the TUI with:
 ```bash
 ./tangle-tui
+```
+
+If installed via Homebrew, you can launch it directly with:
+```bash
+tangle-tui
 ```
 
 ## Citation

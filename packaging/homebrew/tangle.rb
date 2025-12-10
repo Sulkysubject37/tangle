@@ -1,8 +1,8 @@
 class Tangle < Formula
   desc "Static PPI network analysis library with CLI and TUI"
   homepage "https://subconc.hashnode.dev/tangle"
-  url "https://github.com/Sulkysubject37/tangle/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "d4741170a1ea8ed33495d2f25e132b5a525e1af6acf092f6690cd08af95ba514"
+  url "https://github.com/Sulkysubject37/tangle/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "9cb8b6646094d61675f466c110144983099316f514bc950ddc2dc6180296a2db"
   license "MIT"
 
   head "https://github.com/Sulkysubject37/tangle.git", branch: "main"
