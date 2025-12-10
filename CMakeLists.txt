@@ -126,3 +126,12 @@ add_executable(tui_workflow_test tests/tui_workflow_test.cpp)
 target_link_libraries(tui_workflow_test PRIVATE tangle_lib)
 add_test(NAME TUI_Workflow_Test COMMAND tui_workflow_test)
 
+# ----------------------------------------------------------------------------
+# CPack: generic binary/source tarballs
+# ----------------------------------------------------------------------------
+set(CPACK_PACKAGE_NAME "${PROJECT_NAME}")
+set(CPACK_PACKAGE_VERSION "${PROJECT_VERSION}")
+set(CPACK_GENERATOR "TGZ")
+set(CPACK_SOURCE_GENERATOR "TGZ")
+
+include(CPack)

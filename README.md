@@ -32,6 +32,19 @@ make
 
 You can then run the binaries from the build directory (`./tangle`, `./tangle-tui`) or install system-wide via `cmake --install .` / `sudo make install`.
 
+### Generic Linux tarball
+
+On a Linux machine, you can build a self-contained tarball (works across most distros):
+
+```bash
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build .
+cpack -G TGZ
+```
+
+This produces a file like `tangle-0.1.1-Linux.tar.gz` containing `bin/`, `lib/`, and `include/`. Users can unpack it anywhere and add the `bin/` directory to their `PATH`.
+
 ## 1. Core Library
 Built for speed and memory efficiency, the `tangle` library provides:
 - **Graph Engine**: Optimized adjacency lists for large scale networks (STRING, BioGRID).
