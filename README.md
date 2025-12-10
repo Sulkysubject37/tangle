@@ -43,7 +43,9 @@ cmake --build .
 cpack -G TGZ
 ```
 
-This produces a file like `tangle-0.1.1-Linux.tar.gz` containing `bin/`, `lib/`, and `include/`. Users can unpack it anywhere and add the `bin/` directory to their `PATH`.
+This produces a file like `tangle-<version>-Linux.tar.gz` containing `bin/`, `lib/`, and `include/`. Users can unpack it anywhere and add the `bin/` directory to their `PATH`.
+
+> Quirk: `tangle` is written in C++ because large, static PPI networks tend to make Python and R sweat — they pay extra overhead for dynamic typing, copying data frames, and interpreter/GIL costs, while `tangle` can stream tens of millions of edges with tight memory and cache-friendly layouts.
 
 ## 1. Core Library
 Built for speed and memory efficiency, the `tangle` library provides:
