@@ -1,14 +1,23 @@
 cmake_minimum_required(VERSION 3.15)
 project(tangle VERSION 0.1.0 LANGUAGES CXX)
 
-include(FetchContent)
 include(GNUInstallDirs)
-FetchContent_Declare(
-  ftxui
-  GIT_REPOSITORY https://github.com/ArthurSonzogni/FTXUI.git
-  GIT_TAG v6.1.9
-)
-FetchContent_MakeAvailable(ftxui)
+
+# FTXUI dependency: allow using system-installed package (e.g. Homebrew)
+# or falling back to FetchContent when building standalone.
+option(TANGLE_USE_SYSTEM_FTXUI "Use system-installed FTXUI instead of FetchContent" OFF)
+
+if(TANGLE_USE_SYSTEM_FTXUI)
+  find_package(ftxui CONFIG REQUIRED COMPONENTS component)
+else()
+  include(FetchContent)
+  FetchContent_Declare(
+    ftxui
+    GIT_REPOSITORY https://github.com/ArthurSonzogni/FTXUI.git
+    GIT_TAG v6.1.9
+  )
+  FetchContent_MakeAvailable(ftxui)
+endif()
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -18,6 +27,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(TANGLE_WITH_JSON "Enable JSON support" OFF)
 option(BUILD_TANGLE_CLI "Build tangle CLI" ON)
 option(BUILD_TANGLE_TUI "Build tangle TUI" ON)
+# TANGLE_USE_SYSTEM_FTXUI is defined above near the FTXUI dependency setup.
 
 # ----------------------------------------------------------------------------
 # Library: tangle
