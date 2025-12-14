@@ -142,7 +142,8 @@ tangle-tui
 ```
 
 ## Citation
-MD. Arshad, Department of Computer Science, Jamia Millia Islamia.
+MD. Arshad, Department of Computer Science, Jamia Millia Islamia
+https://doi.org/10.5281/zenodo.17927401
 
 ## Blog
 Link : https://subconc.hashnode.dev/tangle
